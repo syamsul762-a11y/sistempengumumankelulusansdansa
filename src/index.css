@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* Custom high-fidelity print overrides */
+@media print {
+  /* Enforce A4 dimensions and hide browsers automatic headers/footers */
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: 'Times New Roman', Times, Georgia, serif !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide absolutely all Web UI wrappers */
+  #portal-header,
+  #info-bar,
+  #portal-navigation,
+  #action-bar,
+  #applet-footer,
+  #stats-dashboard,
+  #public-directory,
+  #wishes-wall-header,
+  #wishing-form-container,
+  #wishes-list-container,
+  #digital-card-container,
+  #disclaimer,
+  footer {
+    display: none !important;
+  }
+
+  /* Expand the core layout to full-width without margins */
+  body, html, #root, main, #portal-main-area {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Perfect formal layout of formal document container */
+  #print-certificate-area {
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding-top: 3cm !important;
+    padding-bottom: 2cm !important;
+    padding-left: 2.5cm !important;
+    padding-right: 2.5cm !important;
+    width: 100% !important;
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+    display: block !important;
+    background: white !important;
+  }
+
+  /* Style specific table grids to look sharp like formal seals */
+  #document-student-table {
+    border: 1px solid #000000 !important;
+    background-color: transparent !important;
+    padding: 12px 18px !important;
+    border-radius: 4px !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  #document-student-table tr {
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+
+  #document-student-table tr:last-child {
+    border-bottom: none !important;
+  }
+
+  #kop-surat {
+    border-bottom: 4px double #000000 !important;
+  }
+
+  #kop-surat h5, #kop-surat h3, #kop-surat p {
+    color: #000000 !important;
+  }
+}
+
+/* Scrollbar styling for wishes card board for sleek web look */
+#wishes-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+#wishes-list-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#wishes-list-container::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.3);
+  border-radius: 20px;
+}
+
+#wishes-list-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(156, 163, 175, 0.5);
+}

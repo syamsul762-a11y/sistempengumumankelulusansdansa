@@ -1,0 +1,6 @@
+{
+  "name": "Portal Kelulusan Siswa",
+  "description": "Sistem informasi pengumuman kelulusan siswa mandiri secara online menggunakan NISN dengan desain elegan, formal, dan profesional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
