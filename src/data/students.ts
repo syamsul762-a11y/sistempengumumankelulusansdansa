@@ -53,7 +53,7 @@ export const students: Student[] = [
     nisn: "0148953910",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/145RSH4ezA1lqh8T3VYDkMwYZvMrA7OgN/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1iyQic-nhbnenxyN7mWCvXeoVB2iOYxY6/view?usp=sharing"
   },
   {
     no: 7,
