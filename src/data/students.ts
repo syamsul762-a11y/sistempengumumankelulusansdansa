@@ -8,7 +8,7 @@ export const students: Student[] = [
     nisn: "0147742054",
     keterangan: "LULUS",
     ucapan: "Mission Accomplished! Selamat statusnya sudah berubah jadi alumni.",
-    linkSkl: "https://drive.google.com/file/d/1ldWxVCuKfHUPeSr60QQiVcMYubPl0OvV/view?usp=drive_link"
+    linkSkl: "https://drive.google.com/file/d/1HWSgnuKAv_iPuBCW5viJbQSh2k0ym_3h/view?usp=sharing"
   },
   {
     no: 2,
@@ -17,7 +17,7 @@ export const students: Student[] = [
     nisn: "0132745795",
     keterangan: "LULUS",
     ucapan: "Congrats! Layar HP-mu hari ini bikin senyum-senyum sendiri, kan?",
-    linkSkl: "https://drive.google.com/file/d/16Mu-Np_Q2V2vwzv-Zy7_U0aOrubyKBLc/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1WRigxZg7MTo6xm43TgjmSaOJAui0xe--/view?usp=sharing"
   },
   {
     no: 3,
@@ -26,7 +26,7 @@ export const students: Student[] = [
     nisn: "0136084421",
     keterangan: "LULUS",
     ucapan: "Fix, kamu lulus! Jangan lupa syukuran dan traktir teman-teman, ya!",
-    linkSkl: "https://drive.google.com/file/d/1kd0SnS2nog14IafEMO2ijgR5LXYOGQTC/view?usp=drive_link"
+    linkSkl: "https://drive.google.com/file/d/11bcLRIv3mSenjeRQYfz8kS9PJ93koANL/view?usp=sharing"
   },
   {
     no: 4,
@@ -35,7 +35,7 @@ export const students: Student[] = [
     nisn: "3136471598",
     keterangan: "LULUS",
     ucapan: "Resmi jadi alumni! Sukses terus di jalan yang kamu pilih, ya!",
-    linkSkl: "https://drive.google.com/file/d/1pU7onEH_O7CKIBlPe77mK2hUp8jNG8Bw/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1K2yptREe5SOeuvffy7QCwySATrRj4C8G/view?usp=sharing"
   },
   {
     no: 5,
@@ -44,7 +44,7 @@ export const students: Student[] = [
     nisn: "0125840733",
     keterangan: "LULUS",
     ucapan: "Pengumuman hari ini adalah bukti kalau kerja kerasmu tidak pernah sia-sia.",
-    linkSkl: "https://drive.google.com/file/d/1a7HNnNh7VO6tLP4VQa4pYkEwZmBJtAI1/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1emsFXUD57JuiYf9t_qL1pS9noWvlI6wD/view?usp=sharing"
   },
   {
     no: 6,
@@ -53,7 +53,7 @@ export const students: Student[] = [
     nisn: "0148953910",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/16IgMjAKDS4bTkCFXAs4HDpxQiPxuDk1j/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1JlIj0vEAZO1GuWDfjYO312IAoaW9PcmL/view?usp=sharing"
   },
   {
     no: 7,
@@ -62,7 +62,7 @@ export const students: Student[] = [
     nisn: "0133665897",
     keterangan: "LULUS",
     ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh dan menginspirasi, ya.",
-    linkSkl: "https://drive.google.com/file/d/1h2-m7VPdemck9QWDgdHbHozRhY2-XAeH/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/13WbwmDumx1ttkRIw2BvVJIFg0ffKkbHJ/view?usp=sharing"
   },
   {
     no: 8,
@@ -71,7 +71,7 @@ export const students: Student[] = [
     nisn: "0142717456",
     keterangan: "LULUS",
     ucapan: "Keberhasilan hari ini adalah modal untuk kesuksesanmu di masa depan. Selamat!",
-    linkSkl: "https://drive.google.com/file/d/17aNuhZAjhGTyWJpU0s1jtSgXo0eYiTJ_/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1B6QOPQBkCns24pVTAWPIjcCIYkVhdHh/view?usp=sharing"
   },
   {
     no: 9,
@@ -80,7 +80,7 @@ export const students: Student[] = [
     nisn: "0145287618",
     keterangan: "LULUS",
     ucapan: "Mission Accomplished! Selamat statusnya sudah berubah jadi alumni.",
-    linkSkl: "https://drive.google.com/file/d/1J3a-lqGujlSPGgYcS6QpRgQJpihVsmzh/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1des7hXnCUu6mY_R7f1__1IdB5J_7Z_6F/view?usp=sharing"
   },
   {
     no: 10,
@@ -89,7 +89,7 @@ export const students: Student[] = [
     nisn: "0141012735",
     keterangan: "LULUS",
     ucapan: "Congrats! Layar HP-mu hari ini bikin senyum-senyum sendiri, kan?",
-    linkSkl: "https://drive.google.com/file/d/1nH2eS0bm17U0VtlPT_s9EY0Xw3ZEE5oo/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1ZO9DIEuTz0Me4L7jxdV8FzmCGjrU_h3j/view?usp=sharing"
   },
   {
     no: 11,
@@ -98,7 +98,7 @@ export const students: Student[] = [
     nisn: "0137426206",
     keterangan: "LULUS",
     ucapan: "Fix, kamu lulus! Jangan lupa syukuran dan traktir teman-teman, ya!",
-    linkSkl: "https://drive.google.com/file/d/1bhD5ttEB40U-s4K1P0PlTcz2ChKLZ8f4/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1V9LbuGjR15paYgQXxJjUzhIh5zHuIYs8/view?usp=sharing"
   },
   {
     no: 12,
@@ -107,7 +107,7 @@ export const students: Student[] = [
     nisn: "0135389673",
     keterangan: "LULUS",
     ucapan: "Resmi jadi alumni! Sukses terus di jalan yang kamu pilih, ya!",
-    linkSkl: "https://drive.google.com/file/d/1rZxzAdGXW3rI1QVdMUMUU1eMO_bFApLv/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1v4rDXRdYTsbShIWBd6TTRNwJYfD4_yF/view?usp=sharing"
   },
   {
     no: 13,
@@ -116,7 +116,7 @@ export const students: Student[] = [
     nisn: "0138150916",
     keterangan: "LULUS",
     ucapan: "Pengumuman hari ini adalah bukti kalau kerja kerasmu tidak pernah sia-sia.",
-    linkSkl: "https://drive.google.com/file/d/1ZbMK09wNqZ2LpZEgrLN_OUtlCdP-8Db-/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1QnDivuW-iB7eiqP08bLd2LaeNJjt37ns/view?usp=sharing"
   },
   {
     no: 14,
@@ -125,7 +125,7 @@ export const students: Student[] = [
     nisn: "3135498346",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/1sECcQZVPUB0QJGf1MaVfGzBxvuCRSwUq/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1Ww4ajFYdyLtMMMCBGCV0a7tGRbCcHrRI/view?usp=sharing"
   },
   {
     no: 15,
@@ -134,7 +134,7 @@ export const students: Student[] = [
     nisn: "3137660171",
     keterangan: "LULUS",
     ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh dan menginspirasi, ya.",
-    linkSkl: "https://drive.google.com/file/d/18e7rWVQrR14Bj2jGS38BpbdqR7sAzTpz/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/199c1GBtTANziokJMiym5fTAA95ptNoc0/view?usp=sharing"
   },
   {
     no: 16,
@@ -143,7 +143,7 @@ export const students: Student[] = [
     nisn: "0133756064",
     keterangan: "LULUS",
     ucapan: "Keberhasilan hari ini adalah modal untuk kesuksesanmu di masa depan. Selamat!",
-    linkSkl: "https://drive.google.com/file/d/1yiQwlwC9qVNFt1aetfsuY7neIyy0iuwz/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1HUPeE0nejomkGNbG2J4r07AnJLRMK4V_/view?usp=sharing"
   },
   {
     no: 17,
@@ -152,7 +152,7 @@ export const students: Student[] = [
     nisn: "0131613036",
     keterangan: "LULUS",
     ucapan: "Mission Accomplished! Selamat statusnya sudah berubah jadi alumni.",
-    linkSkl: "https://drive.google.com/file/d/1oo-iipdFH-X2cZSB-TgNhJBsBTIFQEfd/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1XOB6iKYaQnYJtmohw5GIhD_3qVhowaGo/view?usp=sharing"
   },
   {
     no: 18,
@@ -161,7 +161,7 @@ export const students: Student[] = [
     nisn: "0135786802",
     keterangan: "LULUS",
     ucapan: "Congrats! Layar HP-mu hari ini bikin senyum-senyum sendiri, kan?",
-    linkSkl: "https://drive.google.com/file/d/1l973T4Ebv_ugGS1YZpf9J2gCdolja3ir/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1Qh7Uu5LA2v5V9orXShY4NDpPbn3WJO6b/view?usp=sharing"
   },
   {
     no: 19,
@@ -170,7 +170,7 @@ export const students: Student[] = [
     nisn: "0131596611",
     keterangan: "LULUS",
     ucapan: "Fix, kamu lulus! Jangan lupa syukuran dan traktir teman-teman, ya!",
-    linkSkl: "https://drive.google.com/file/d/1rsUXtr5dVjeF_85ZiWQ7LMVeajCGBhge/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1i6un6ztbWazO4Agbw9_0tdj9lK54x7Zg/view?usp=sharing"
   },
   {
     no: 20,
@@ -179,7 +179,7 @@ export const students: Student[] = [
     nisn: "0139624661",
     keterangan: "LULUS",
     ucapan: "Resmi jadi alumni! Sukses terus di jalan yang kamu pilih, ya!",
-    linkSkl: "https://drive.google.com/file/d/1ifPumpFXrUT-4jq3dPhpfOmYJTm5JqXu/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1tFjTVkcBmMYyJUCVSHUisnp9qvQ7MLxT/view?usp=sharing"
   },
   {
     no: 21,
@@ -188,7 +188,7 @@ export const students: Student[] = [
     nisn: "3133303379",
     keterangan: "LULUS",
     ucapan: "Pengumuman hari ini adalah bukti kalau kerja kerasmu tidak pernah sia-sia.",
-    linkSkl: "https://drive.google.com/file/d/14s7WoTWOkP4XLOnXAydSgGviwWkeXVEH/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1geUkhFxsPezHK5VK7YgdACvFxx6gI6DC/view?usp=sharing"
   },
   {
     no: 22,
@@ -197,7 +197,7 @@ export const students: Student[] = [
     nisn: "0134717244",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/13AkLFF_po-BD2e4WKtpnkDwnZ7VF-VYp/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1cyU73Ggoi96nOzdryB1AU2qBjWXCA5dw/view?usp=sharing"
   },
   {
     no: 23,
@@ -206,7 +206,7 @@ export const students: Student[] = [
     nisn: "0137294208",
     keterangan: "LULUS",
     ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh and menginspirasi, ya.",
-    linkSkl: "https://drive.google.com/file/d/1oQV0CwNKDSb1AjaI42Ul4T04Le0BNDNh/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/13tM6EslqzjXGr_2D2jlasXr3wymU6Ugb/view?usp=sharing"
   },
   {
     no: 24,
@@ -215,7 +215,7 @@ export const students: Student[] = [
     nisn: "3131527001",
     keterangan: "LULUS",
     ucapan: "Keberhasilan hari ini adalah modal untuk kesuksesanmu di masa depan. Selamat!",
-    linkSkl: "https://drive.google.com/file/d/1ogKz_Dc4qj9wr5JmQAsdx-kPIc3lmi3D/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1C--tr1c37KQ383Oo9learFnfmLaWxwlW/view?usp=sharing"
   },
   {
     no: 25,
@@ -224,7 +224,7 @@ export const students: Student[] = [
     nisn: "0138355345",
     keterangan: "LULUS",
     ucapan: "Mission Accomplished! Selamat statusnya sudah berubah jadi alumni.",
-    linkSkl: "https://drive.google.com/file/d/1N8zKu37mWKPSq7cY0JxsqGq6VtJ9rxMB/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1QoeanthoFFVV27e0wLBta4GQlsZjyuVh/view?usp=sharing"
   },
   {
     no: 26,
@@ -233,7 +233,7 @@ export const students: Student[] = [
     nisn: "0143816883",
     keterangan: "LULUS",
     ucapan: "Congrats! Layar HP-mu hari ini bikin senyum-senyum sendiri, kan?",
-    linkSkl: "https://drive.google.com/file/d/1XD8sQu7iynkERSJ_apRp4UvZjXeW59Q5/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1pyDpsruP-8oxhvoqyNpa8jYqNgXbLP6Y/view?usp=sharing"
   },
   {
     no: 27,
@@ -242,7 +242,7 @@ export const students: Student[] = [
     nisn: "0148670900",
     keterangan: "LULUS",
     ucapan: "Fix, kamu lulus! Jangan lupa syukuran dan traktir teman-teman, ya!",
-    linkSkl: "https://drive.google.com/file/d/17yxiJ2J8htSfx0EgQi9OIfv_opmof13q/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1wYQKebRXbCjaAeXg_ejUWs1AW5H8Ng1a/view?usp=sharing"
   },
   {
     no: 28,
@@ -251,7 +251,7 @@ export const students: Student[] = [
     nisn: "0135809974",
     keterangan: "LULUS",
     ucapan: "Resmi jadi alumni! Sukses terus di jalan yang kamu pilih, ya!",
-    linkSkl: "https://drive.google.com/file/d/1wfMhXwuQrx9JfvRkC49ymajoqX2506qq/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1jS3JtYvoWCJZUsEqj3w6kF2IkdqO9odb/view?usp=sharing"
   },
   {
     no: 29,
@@ -260,7 +260,7 @@ export const students: Student[] = [
     nisn: "0139728280",
     keterangan: "LULUS",
     ucapan: "Pengumuman hari ini adalah bukti kalau kerja kerasmu tidak pernah sia-sia.",
-    linkSkl: "https://drive.google.com/file/d/1de7C7M2MY9ZddKHqO4DhZ1sgzNYTDYw_/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1ynnkghEUgnOfCTBYoOWGpu6A8HGHixK1/view?usp=sharing"
   },
   {
     no: 30,
@@ -269,7 +269,7 @@ export const students: Student[] = [
     nisn: "3138843968",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/1JrLExP61qQHWL6SzOg6tJUgdFnOmMjfq/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1OkpHx7Pe_8LMf0rWlhrmD5WZTFvFSfvM/view?usp=sharing"
   },
   {
     no: 31,
@@ -278,7 +278,7 @@ export const students: Student[] = [
     nisn: "3136570472",
     keterangan: "LULUS",
     ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh dan menginspirasi, ya.",
-    linkSkl: "https://drive.google.com/file/d/1vIzNbMlqpyMRBTM93Bz9Xml82hiWEiSl/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1tS9KKOHwxPPBYxNot57GtF-qDMm49hK8/view?usp=sharing"
   },
   {
     no: 32,
@@ -287,7 +287,7 @@ export const students: Student[] = [
     nisn: "0142684753",
     keterangan: "LULUS",
     ucapan: "Keberhasilan hari ini adalah modal untuk kesuksesanmu di masa depan. Selamat!",
-    linkSkl: "https://drive.google.com/file/d/1GBCvFfyFOc_k-XCl_gTX0C_ppzJMXjLy/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1NF6QfWvOiXi4rI2I4GeKXlDBJILqR7T2/view?usp=sharing"
   },
   {
     no: 33,
@@ -296,7 +296,7 @@ export const students: Student[] = [
     nisn: "3130816836",
     keterangan: "LULUS",
     ucapan: "Mission Accomplished! Selamat statusnya sudah berubah jadi alumni.",
-    linkSkl: "https://drive.google.com/file/d/19rHjJXQlCyi184-GZFpaR-0kjR3UtJ7a/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1wsc-KMH9x2w-1tWdPSRt4IkYm2I-XeTs/view?usp=sharing"
   },
   {
     no: 34,
@@ -305,7 +305,7 @@ export const students: Student[] = [
     nisn: "0132044932",
     keterangan: "LULUS",
     ucapan: "Congrats! Layar HP-mu hari ini bikin senyum-senyum sendiri, kan?",
-    linkSkl: "https://drive.google.com/file/d/1RGzyqLm6NRQhjp8vkbHM3fvOEe93qPWA/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1CDbOUqt4pMyuixuPb9Q7qMWim1vG8bJ-/view?usp=sharing"
   },
   {
     no: 35,
@@ -314,7 +314,7 @@ export const students: Student[] = [
     nisn: "3130609705",
     keterangan: "LULUS",
     ucapan: "Fix, kamu lulus! Jangan lupa syukuran dan traktir teman-teman, ya!",
-    linkSkl: "https://drive.google.com/file/d/1NZl54ebzaEaIVl3VMwiKW_xF_kwitCrf/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1aKbQW2BXBbuLy4oG4t4kHzRRgnq5OJL4/view?usp=sharing"
   },
   {
     no: 36,
@@ -323,7 +323,7 @@ export const students: Student[] = [
     nisn: "0137824327",
     keterangan: "LULUS",
     ucapan: "Resmi jadi alumni! Sukses terus di jalan yang kamu pilih, ya!",
-    linkSkl: "https://drive.google.com/file/d/1055uQrkZ1WBeSzm9gUtZEBgFWpDcO9QD/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1eyJKNCUunW9AAXBbV0KXDNnxcBoloDV9/view?usp=sharing"
   },
   {
     no: 37,
@@ -332,7 +332,7 @@ export const students: Student[] = [
     nisn: "0131005504",
     keterangan: "LULUS",
     ucapan: "Pengumuman hari ini adalah bukti kalau kerja kerasmu tidak pernah sia-sia.",
-    linkSkl: "https://drive.google.com/file/d/1LwbU_FsRvYS7YauvZBnjcgGR7XWOcl63/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1NjVU-_kumJN3QNuxes4Cdr3ZrovzEFhm/view?usp=sharing"
   },
   {
     no: 38,
@@ -341,7 +341,7 @@ export const students: Student[] = [
     nisn: "0134962951",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/1JI3KL77C6F3S6g4fqNGQ6nLkOy2Qdqib/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1G5seuN7Opr7EJEEGDd1K4turAhkr6qzu/view?usp=sharing"
   },
   {
     no: 39,
@@ -349,8 +349,8 @@ export const students: Student[] = [
     nis: "4750",
     nisn: "0148524149",
     keterangan: "LULUS",
-    ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh dan menginspirasi, ya.",
-    linkSkl: "https://drive.google.com/file/d/1rZGaBDW0-6j7Mh-Ub6XleEksxEwDdunH/view?usp=sharing"
+    ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh and menginspirasi, ya.",
+    linkSkl: "https://drive.google.com/file/d/1cjbpsHPnd7LDPbvtoWPEpcboRZ5EFH6s/view?usp=sharing"
   },
   {
     no: 40,
@@ -359,7 +359,7 @@ export const students: Student[] = [
     nisn: "3135711890",
     keterangan: "LULUS",
     ucapan: "Keberhasilan hari ini adalah modal untuk kesuksesanmu di masa depan. Selamat!",
-    linkSkl: "https://drive.google.com/file/d/16nje1CPTVnienm9vKGBkSQSI_87hD6to/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1J1D6RY03s6lEKdPwr7AfS_3WgaqP7qRI/view?usp=sharing"
   },
   {
     no: 41,
@@ -368,7 +368,7 @@ export const students: Student[] = [
     nisn: "0131713397",
     keterangan: "LULUS",
     ucapan: "Mission Accomplished! Selamat statusnya sudah berubah jadi alumni.",
-    linkSkl: "https://drive.google.com/file/d/1jQHWVYnyPRCRYiyNipjg3xOzyhSZ8QVe/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1sZocpfzqX8uA8c78JMmNuTFKtpcG0W89/view?usp=sharing"
   },
   {
     no: 42,
@@ -377,7 +377,7 @@ export const students: Student[] = [
     nisn: "3132304948",
     keterangan: "LULUS",
     ucapan: "Congrats! Layar HP-mu hari ini bikin senyum-senyum sendiri, kan?",
-    linkSkl: "https://drive.google.com/file/d/1tU2-e5CM2nbMiTgg-0bsXVLgQPwN2q3M/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1ajckJIcELz1XezY5S8sDwnD2gIexRbD5/view?usp=sharing"
   },
   {
     no: 43,
@@ -386,7 +386,7 @@ export const students: Student[] = [
     nisn: "0133662733",
     keterangan: "LULUS",
     ucapan: "Fix, kamu lulus! Jangan lupa syukuran dan traktir teman-teman, ya!",
-    linkSkl: "https://drive.google.com/file/d/1VYvHRCMozmAvyBN5ivsIXRIuqiiPsurV/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1utWMLZgzBNl6V6-DShGzzTGO1_9xEA-9/view?usp=sharing"
   },
   {
     no: 44,
@@ -395,7 +395,7 @@ export const students: Student[] = [
     nisn: "3148140677",
     keterangan: "LULUS",
     ucapan: "Resmi jadi alumni! Sukses terus di jalan yang kamu pilih, ya!",
-    linkSkl: "https://drive.google.com/file/d/1YG2A-mDMk_VQ3tRtC_zQRSqrxC7NiaVd/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1D65rgu-W4Yqa_c2Gs6wk2YOaU7zH1xUm/view?usp=sharing"
   },
   {
     no: 45,
@@ -404,7 +404,7 @@ export const students: Student[] = [
     nisn: "3140063931",
     keterangan: "LULUS",
     ucapan: "Pengumuman hari ini adalah bukti kalau kerja kerasmu tidak pernah sia-sia.",
-    linkSkl: "https://drive.google.com/file/d/144-0571kVjfuq0WIB5RhTI2vSQChe_tg/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1qDeBdGIVCEW1HA2kafe4CqO6iIhDtShz/view?usp=sharing"
   },
   {
     no: 46,
@@ -413,7 +413,7 @@ export const students: Student[] = [
     nisn: "0133653592",
     keterangan: "LULUS",
     ucapan: "Selamat atas kelulusannya! Jadikan ini awal dari petualangan hebatmu.",
-    linkSkl: "https://drive.google.com/file/d/1f6b6pkH99B1cDbTPYva7qXYYd7KDJjXc/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1MnU-zydt4Yjd9i7hKljfbk7SeGO1G1Ym/view?usp=sharing"
   },
   {
     no: 47,
@@ -422,7 +422,7 @@ export const students: Student[] = [
     nisn: "3141584581",
     keterangan: "LULUS",
     ucapan: "Kelulusan ini adalah gerbang awal. Teruslah tumbuh dan menginspirasi, ya.",
-    linkSkl: "https://drive.google.com/file/d/1OLA1oMLu2005Q5i7OVJcoqevqH2WkQt2/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/14e62PeK-NYjs_aK8eqVgf4GQKEa5uqGN/view?usp=sharing"
   },
   {
     no: 48,
@@ -431,7 +431,7 @@ export const students: Student[] = [
     nisn: "0139482415",
     keterangan: "LULUS",
     ucapan: "Keberhasilan hari ini adalah modal untuk kesuksesanmu di masa depan. Selamat!",
-    linkSkl: "https://drive.google.com/file/d/1_iUo_KHxHlCmRiX93ti-p9969JOxpWqq/view?usp=sharing"
+    linkSkl: "https://drive.google.com/file/d/1Ssw0NwijuVuXOTY59dfH24GAOPg5_raX/view?usp=sharing"
   }
 ];
 
