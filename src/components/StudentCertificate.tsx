@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Student, SchoolConfig } from '../types';
-import { Award, Printer, Share2, ClipboardCheck, ArrowLeft, Heart, FileText, Sparkles } from 'lucide-react';
+import { Award, Printer, Share2, ClipboardCheck, ArrowLeft, Heart, FileText, Sparkles, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import SchoolLogo from './SchoolLogo';
 
@@ -163,10 +163,22 @@ export default function StudentCertificate({ student, config, onReset }: Certifi
           </button>
         </div>
 
-        <div className="flex gap-2 w-full sm:w-auto justify-end" id="action-buttons">
+        <div className="flex gap-2 w-full sm:w-auto justify-end flex-wrap sm:flex-nowrap" id="action-buttons">
+          {student.linkSkl && (
+            <a
+              href={student.linkSkl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-amber-600 hover:bg-amber-500 rounded-lg hover:shadow-lg transition w-full sm:w-auto justify-center cursor-pointer"
+              id="btn-download-drive"
+            >
+              <Download className="w-4 h-4" />
+              Unduh File SKL (Drive)
+            </a>
+          )}
           <button
             onClick={handleShare}
-            className={`flex items-center gap-2 px-4 py-2 text-sm font-medium border border-slate-200 bg-white rounded-lg hover:bg-slate-50 text-slate-700 transition w-1/2 sm:w-auto justify-center`}
+            className="flex items-center gap-2 px-4 py-2 text-sm font-medium border border-slate-200 bg-white rounded-lg hover:bg-slate-50 text-slate-700 transition w-1/2 sm:w-auto justify-center cursor-pointer"
             id="btn-share"
           >
             {copied ? (
@@ -183,7 +195,7 @@ export default function StudentCertificate({ student, config, onReset }: Certifi
           </button>
           <button
             onClick={handlePrint}
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-950 rounded-lg hover:bg-blue-900 shadow-md hover:shadow-lg transition w-1/2 sm:w-auto justify-center"
+            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-950 rounded-lg hover:bg-blue-900 shadow-md hover:shadow-lg transition w-1/2 sm:w-auto justify-center cursor-pointer"
             id="btn-cetak"
           >
             <Printer className="w-4 h-4" />
@@ -214,7 +226,7 @@ export default function StudentCertificate({ student, config, onReset }: Certifi
             <div className="relative mb-6 flex justify-center" id="crest-wrapper">
               <div className="absolute inset-x-0 -top-4 -bottom-4 bg-amber-500/10 rounded-full blur-md animate-pulse" />
               <div className="relative bg-slate-950 p-2.5 rounded-full border border-slate-800">
-                <SchoolLogo size={80} />
+                <SchoolLogo size={80} logoUrl={config.logoUrl} />
               </div>
             </div>
 
@@ -256,7 +268,7 @@ export default function StudentCertificate({ student, config, onReset }: Certifi
             </div>
 
             {/* Personal celebratory message from principal */}
-            <div className="max-w-lg w-full relative group">
+            <div className="max-w-xl w-full relative group mb-6">
               <div className="absolute inset-0 bg-blue-500/5 rounded-2xl blur-lg transition group-hover:bg-blue-500/10" />
               <div className="relative border border-slate-800 bg-slate-950/30 p-5 rounded-2xl">
                 <span className="absolute -top-3 left-6 px-3 py-0.5 bg-slate-800 border border-slate-700 rounded-full text-[10px] font-mono tracking-widest text-amber-400 uppercase">
@@ -273,6 +285,28 @@ export default function StudentCertificate({ student, config, onReset }: Certifi
                 </div>
               </div>
             </div>
+
+            {/* Direct Google Drive Download Alert Box */}
+            {student.linkSkl && (
+              <div className="max-w-xl w-full bg-gradient-to-r from-amber-600/10 to-amber-500/5 border border-amber-500/20 text-amber-200 rounded-2xl p-5 mb-2 text-center flex flex-col items-center gap-3">
+                <div className="flex items-center gap-2">
+                  <FileText className="w-5 h-5 text-amber-400" />
+                  <span className="font-bold text-sm tracking-wide">Dokumen SKL PDF Asli Siap Diunduh</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed max-w-md">
+                  Surat Keterangan Lulus (SKL) resmi untuk <strong>{student.nama}</strong> telah diunggah dan terverifikasi. Silakan unduh file PDF asli yang siap dicetak melaui Google Drive sekolah.
+                </p>
+                <a
+                  href={student.linkSkl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  <Download className="w-4 h-4 shrink-0" />
+                  Unduh Dokumen SKL (Google Drive)
+                </a>
+              </div>
+            )}
           </motion.div>
         )}
 
@@ -287,11 +321,32 @@ export default function StudentCertificate({ student, config, onReset }: Certifi
             className="w-full bg-white text-black p-4 sm:p-12 border border-slate-300 rounded-2xl shadow-xl font-serif leading-relaxed text-slate-900 print:border-none print:shadow-none print:p-0"
             id="print-certificate-area"
           >
+            {/* Screen-only Google Drive Download Alert Box (formal tab) */}
+            {student.linkSkl && (
+              <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-950 rounded-xl text-xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 print:hidden font-sans">
+                <div className="flex gap-2">
+                  <FileText className="w-5 h-5 text-emerald-700 shrink-0 mt-0.5" />
+                  <div>
+                    <h5 className="font-bold">Unduh Versi PDF Asli</h5>
+                    <p className="text-emerald-700 text-[11px] mt-0.5">Surat Keterangan Lulus (SKL) versi cetak resmi dapat diunduh langsung dalam format PDF asli lewat Google Drive.</p>
+                  </div>
+                </div>
+                <a
+                  href={student.linkSkl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-lg text-center transition cursor-pointer shrink-0"
+                >
+                  Unduh PDF di Drive
+                </a>
+              </div>
+            )}
+
             {/* FORMAL KOP SURAT (HERALDIC INDONESIAN LETTERHEAD) */}
             <div className="flex flex-col items-center text-center pb-4 border-b-4 border-double border-black relative" id="kop-surat">
               {/* School Logo */}
               <div className="absolute left-2 sm:left-4 top-2 hidden md:block w-16 h-16 opacity-90 print:block">
-                <SchoolLogo size={64} />
+                <SchoolLogo size={64} logoUrl={config.logoUrl} />
               </div>
 
               <div className="md:px-20">

@@ -3,9 +3,24 @@ import React from 'react';
 interface SchoolLogoProps {
   className?: string;
   size?: number | string;
+  logoUrl?: string;
 }
 
-export default function SchoolLogo({ className = '', size = 64 }: SchoolLogoProps) {
+export default function SchoolLogo({ className = '', size = 64, logoUrl }: SchoolLogoProps) {
+  if (logoUrl) {
+    return (
+      <img 
+        src={logoUrl} 
+        alt="School Logo" 
+        width={size} 
+        height={size} 
+        referrerPolicy="no-referrer"
+        className={`${className} object-contain rounded-lg bg-white p-0.5 border border-slate-100 shadow-sm`}
+        style={{ width: size, height: size }}
+      />
+    );
+  }
+
   return (
     <svg 
       width={size} 

@@ -21,7 +21,8 @@ import {
   Clock,
   Lock,
   Unlock,
-  Hourglass
+  Hourglass,
+  Upload
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -30,7 +31,22 @@ export default function App() {
   const [nisnQuery, setNisnQuery] = useState('');
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const [errorText, setErrorText] = useState('');
-  const [config, setConfig] = useState<SchoolConfig>(defaultSchoolConfig);
+  const [config, setConfig] = useState<SchoolConfig>(() => {
+    const saved = localStorage.getItem('school_config');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        console.error("Failed to parse school_config", e);
+      }
+    }
+    return defaultSchoolConfig;
+  });
+
+  // Save school configuration to localStorage
+  useEffect(() => {
+    localStorage.setItem('school_config', JSON.stringify(config));
+  }, [config]);
 
   // Admin Login & Settings State
   const [showAdminModal, setShowAdminModal] = useState(false);
@@ -48,6 +64,7 @@ export default function App() {
   const [adminPrincipalNip, setAdminPrincipalNip] = useState(config.headmasterNip);
   const [adminAcademicYear, setAdminAcademicYear] = useState(config.academicYear);
   const [adminSkuNo, setAdminSkuNo] = useState(config.skuNo);
+  const [adminLogoUrl, setAdminLogoUrl] = useState(config.logoUrl || '');
 
   // Sync admin state with current school configuration
   useEffect(() => {
@@ -59,6 +76,7 @@ export default function App() {
     setAdminPrincipalNip(config.headmasterNip);
     setAdminAcademicYear(config.academicYear);
     setAdminSkuNo(config.skuNo);
+    setAdminLogoUrl(config.logoUrl || '');
   }, [config]);
 
   // Countdown State
@@ -107,6 +125,27 @@ export default function App() {
     }
   };
 
+  // Helper for processing school logo file uploads to base64 encoding format
+  const handleLogoFileChange = (file: File) => {
+    if (!file.type.startsWith('image/')) {
+      alert('Format file tidak didukung! Silakan unggah gambar sahaja.');
+      return;
+    }
+    if (file.size > 1 * 1024 * 1024) {
+      alert('Ukuran file terlalu besar! Silakan unggah gambar di bawah 1MB agar muat dalam penyimpanan web lokal.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const result = e.target?.result;
+      if (typeof result === 'string') {
+        setAdminLogoUrl(result);
+      }
+    };
+    reader.readAsDataURL(file);
+  };
+
   // Handle saving configurations back to school state
   const handleSaveAdminSettings = (e: React.FormEvent) => {
     e.preventDefault();
@@ -120,6 +159,7 @@ export default function App() {
       countdownTarget: adminCountdownTarget,
       academicYear: adminAcademicYear,
       skuNo: adminSkuNo,
+      logoUrl: adminLogoUrl,
     });
     setShowAdminModal(false);
   };
@@ -189,7 +229,7 @@ export default function App() {
           {/* Logo / Badge */}
           <div className="flex items-center gap-4 text-center md:text-left">
             <div className="bg-white/10 p-1.5 rounded-2xl flex items-center justify-center shadow-lg shrink-0 border border-white/10">
-              <SchoolLogo size={52} />
+              <SchoolLogo size={52} logoUrl={config.logoUrl} />
             </div>
             <div>
               <span className="text-[10px] tracking-widest uppercase font-bold text-amber-400 font-mono block">Sistem Pengumuman Kelulusan Mandiri (SPKM)</span>
@@ -589,7 +629,7 @@ export default function App() {
                 <form onSubmit={handleSaveAdminSettings} className="p-6 space-y-4 max-h-[500px] overflow-y-auto">
                   
                   {/* Quick Access bypass countdown widget */}
-                  <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+                  <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 font-sans">
                     <div>
                       <h4 className="text-xs font-bold text-amber-900">Akses Bypass Hitung Mundur</h4>
                       <p className="text-[11px] text-amber-700">Aktifkan untuk membuka pemblokiran pencarian mandiri NISN seketika tanpa terikat timer.</p>
@@ -603,6 +643,68 @@ export default function App() {
                       />
                       <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-600"></div>
                     </label>
+                  </div>
+
+                  {/* Upload Logo Sekolah section */}
+                  <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-3 font-sans" id="admin-logo-upload-section">
+                    <div className="flex items-center gap-2 pb-1 border-b border-slate-200">
+                      <Upload className="w-4 h-4 text-blue-950" />
+                      <h4 className="text-xs font-bold text-blue-950 uppercase tracking-wider">Upload Logo Sekolah</h4>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
+                      {/* Preview Container */}
+                      <div className="relative flex flex-col items-center justify-center border border-slate-200 bg-white p-2.5 rounded-xl shrink-0 w-24">
+                        <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1.5 font-mono">TAMPILAN</span>
+                        <div className="w-16 h-16 rounded-lg bg-slate-50 flex items-center justify-center border border-dashed border-slate-300 overflow-hidden">
+                          {adminLogoUrl ? (
+                            <img src={adminLogoUrl} alt="Preview Logo" className="object-contain w-full h-full" referrerPolicy="no-referrer" />
+                          ) : (
+                            <SchoolLogo size={44} />
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Input Action Panel */}
+                      <div className="flex-1 w-full space-y-2">
+                        <label 
+                          className="w-full h-24 border-2 border-dashed border-slate-300 hover:border-blue-900/50 hover:bg-blue-50/20 rounded-xl flex flex-col items-center justify-center cursor-pointer transition p-2 text-center"
+                          onDragOver={(e) => e.preventDefault()}
+                          onDrop={(e) => {
+                            e.preventDefault();
+                            const file = e.dataTransfer.files?.[0];
+                            if (file) {
+                              handleLogoFileChange(file);
+                            }
+                          }}
+                        >
+                          <div className="flex flex-col items-center justify-center">
+                            <Upload className="w-5 h-5 text-slate-400 mb-1 animate-pulse" />
+                            <span className="text-xs font-semibold text-slate-600">Klik atau seret gambar logo ke sini</span>
+                            <span className="text-[9px] text-slate-400 mt-0.5">Format PNG, JPG, JPEG, WEBP atau SVG (Maks. 1MB)</span>
+                          </div>
+                          <input 
+                            type="file" 
+                            accept="image/*" 
+                            className="hidden" 
+                            onChange={(e) => {
+                              const file = e.target.files?.[0];
+                              if (file) handleLogoFileChange(file);
+                            }}
+                          />
+                        </label>
+
+                        {adminLogoUrl && (
+                          <button
+                            type="button"
+                            onClick={() => setAdminLogoUrl('')}
+                            className="text-[10px] font-bold text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 px-2.5 py-1 rounded-lg transition flex items-center gap-1 cursor-pointer"
+                          >
+                            <X className="w-3 h-3" /> Hapus Logo & Kembali ke Default
+                          </button>
+                        )}
+                      </div>
+                    </div>
                   </div>
 
                   <div>
